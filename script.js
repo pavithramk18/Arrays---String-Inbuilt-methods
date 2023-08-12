@@ -32,5 +32,46 @@ console.log(unshift);   //['mk', 'p', 'a', 'v', 'i', 't', 'h', 'r', 'a']
 //concat==>It will add all the given array into a single array
 
 const a=[1,2,3],b=['p','a','v','i'],c=['t','h','r','a','mk'],d=["B.E"];
-var concat = a.concat(b,c,d);
-console.log(concat);  //[1, 2, 3, 'p', 'a', 'v', 'i', 't', 'h', 'r', 'a', 'mk', 'B.E']
+var concat = b.concat(c,d,a);
+console.log(concat);  //['p', 'a', 'v', 'i', 't', 'h', 'r', 'a', 'mk', 'B.E', 1, 2, 3]
+
+
+//sort()==>will sort i.e ascending order the given array
+
+const arrays=['u','o','e','n','a'];
+console.log(arrays.sort());  //['a', 'e', 'n', 'o', 'u']
+
+//reverse==>it will reverse the given array 
+
+const reverse = [1,2,3,'m','k',"Pavithra"];
+const rev = [99,88,77,66];
+console.log(rev.reverse());   //[66, 77, 88, 99]
+console.log(reverse.reverse());  //['Pavithra', 'k', 'm', 3, 2, 1]
+
+//splice(index,to index,elements to be added)  it will delete the element from to index and add the remaining elements
+
+//Example 1
+const splicearray=["a","b","c",2,4,"i"];
+console.log(splicearray.splice(2,4,"Pavithra"));   //['c', 2, 4, 'i']   
+console.log(splicearray);  // ['a', 'b', 'Pavithra']
+console.log(splicearray.splice(1,3,9,3));   ['b', 'Pavithra']
+console.log(splicearray);  //['a', 9, 3]
+
+//Example 2
+
+const e= [1,2,3,4,5,6];
+console.log(e.splice(1,3,99));  [2, 3, 4]
+console.log(e);  //[1, 99, 5, 6]
+
+//slice(start index,end index) it will extract the ddat from start index till eend index and give the elements inbetween in an new array
+
+const slice = [1,2,3,4,5,6,8];
+console.log(slice.slice(2,3));  //[3]
+
+const slice1= [1,2,"Pavi",'y','e','i',3,6];
+var slicearr= slice1.slice(2,5);
+console.log(slicearr);   //['Pavi', 'y', 'e']
+
+
+
+
