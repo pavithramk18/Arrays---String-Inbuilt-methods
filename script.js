@@ -65,12 +65,23 @@ console.log(e);  //[1, 99, 5, 6]
 
 //slice(start index,end index) it will extract the ddat from start index till eend index and give the elements inbetween in an new array
 
+
+//Example 1
 const slice = [1,2,3,4,5,6,8];
 console.log(slice.slice(2,3));  //[3]
 
+
+//Example 2
 const slice1= [1,2,"Pavi",'y','e','i',3,6];
 var slicearr= slice1.slice(2,5);
 console.log(slicearr);   //['Pavi', 'y', 'e']
+
+//includes()==>it will check whether given element present in the array or not if present returns true else false
+const include= [1,2,3,5,'i','o'];
+console.log(include.includes(3));   //true
+console.log(include.includes('p'));  //false
+console.log(include.length);
+
 
 
 
